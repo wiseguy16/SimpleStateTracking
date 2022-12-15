@@ -101,10 +101,7 @@ struct PreferredName: ReducerProtocol {
 
 struct NickNameView: View {
   let store: StoreOf<PreferredName>
-  @State var nickname: String = ""
-//  struct ViewState: Equatable {
-//    var nickname: String
-//  }
+  @State private var nickname: String = ""
   
     var body: some View {
       WithViewStore(self.store) { viewStore in
@@ -124,7 +121,6 @@ struct NickNameView: View {
             }
 
           }
-          // viewStore.binding(\.$nickname)
           TextField("Enter your NickName", text: $nickname)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()

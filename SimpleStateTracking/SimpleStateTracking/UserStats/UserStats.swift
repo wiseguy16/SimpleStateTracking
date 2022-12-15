@@ -33,10 +33,6 @@ struct UserStats: ReducerProtocol {
     case name(PreferredName.Action)
   }
 
-//  func reduce(into state: inout State, action: Action) -> Effect<Action, Never> {
-//    <#code#>
-//  }
-
   var body: some ReducerProtocol<State, Action> {
     CombineReducers {
       Scope(state: \.numberState, action: /UserStats.Action.number) {

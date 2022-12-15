@@ -27,7 +27,6 @@ struct StatsView: View {
           }.foregroundColor(.red)
 
           Button("Set my favorite number to 42") {
-//            viewStore.send(.number(.increment))
             viewStore.send(.setMeaningOfLife)
           }
         }
