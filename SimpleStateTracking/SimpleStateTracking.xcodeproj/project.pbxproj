@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4AC59C9F294BA6FD00D44F7B /* SimpleStateTrackingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59C9E294BA6FD00D44F7B /* SimpleStateTrackingApp.swift */; };
-		4AC59CA1294BA6FD00D44F7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CA0294BA6FD00D44F7B /* ContentView.swift */; };
 		4AC59CA3294BA70300D44F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC59CA2294BA70300D44F7B /* Assets.xcassets */; };
 		4AC59CA6294BA70300D44F7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC59CA5294BA70300D44F7B /* Preview Assets.xcassets */; };
 		4AC59CB0294BA70300D44F7B /* SimpleStateTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CAF294BA70300D44F7B /* SimpleStateTrackingTests.swift */; };
 		4AC59CBA294BA70300D44F7B /* SimpleStateTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CB9294BA70300D44F7B /* SimpleStateTrackingUITests.swift */; };
 		4AC59CBC294BA70300D44F7B /* SimpleStateTrackingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CBB294BA70300D44F7B /* SimpleStateTrackingUITestsLaunchTests.swift */; };
+		4AC59CC9294BA78A00D44F7B /* MainContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CC8294BA78900D44F7B /* MainContainerView.swift */; };
+		4AC59CCB294BA79F00D44F7B /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CCA294BA79F00D44F7B /* UserStats.swift */; };
+		4AC59CCD294BA7AA00D44F7B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CCC294BA7AA00D44F7B /* StatsView.swift */; };
+		4AC59CCF294BA7B700D44F7B /* NickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CCE294BA7B700D44F7B /* NickNameView.swift */; };
+		4AC59CD1294BA7C400D44F7B /* NumberStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CD0294BA7C400D44F7B /* NumberStore.swift */; };
+		4AC59CD3294BA7D100D44F7B /* SecretClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CD2294BA7D100D44F7B /* SecretClient.swift */; };
+		4AC59CD5294BA7DC00D44F7B /* NumberClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CD4294BA7DB00D44F7B /* NumberClient.swift */; };
+		4AC59CD7294BA7E500D44F7B /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC59CD6294BA7E500D44F7B /* NumberView.swift */; };
+		4AC59CDC294BA86300D44F7B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC59CDB294BA86300D44F7B /* ComposableArchitecture */; };
+		4AC59CDE294BA86300D44F7B /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC59CDD294BA86300D44F7B /* Dependencies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		4AC59C9B294BA6FD00D44F7B /* SimpleStateTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleStateTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC59C9E294BA6FD00D44F7B /* SimpleStateTrackingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStateTrackingApp.swift; sourceTree = "<group>"; };
-		4AC59CA0294BA6FD00D44F7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AC59CA2294BA70300D44F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC59CA5294BA70300D44F7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AC59CAB294BA70300D44F7B /* SimpleStateTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStateTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,15 @@
 		4AC59CB5294BA70300D44F7B /* SimpleStateTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStateTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC59CB9294BA70300D44F7B /* SimpleStateTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStateTrackingUITests.swift; sourceTree = "<group>"; };
 		4AC59CBB294BA70300D44F7B /* SimpleStateTrackingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStateTrackingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AC59CC8294BA78900D44F7B /* MainContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContainerView.swift; sourceTree = "<group>"; };
+		4AC59CCA294BA79F00D44F7B /* UserStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
+		4AC59CCC294BA7AA00D44F7B /* StatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		4AC59CCE294BA7B700D44F7B /* NickNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickNameView.swift; sourceTree = "<group>"; };
+		4AC59CD0294BA7C400D44F7B /* NumberStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberStore.swift; sourceTree = "<group>"; };
+		4AC59CD2294BA7D100D44F7B /* SecretClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretClient.swift; sourceTree = "<group>"; };
+		4AC59CD4294BA7DB00D44F7B /* NumberClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberClient.swift; sourceTree = "<group>"; };
+		4AC59CD6294BA7E500D44F7B /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		4AC59CDF294BA97F00D44F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC59CDC294BA86300D44F7B /* ComposableArchitecture in Frameworks */,
+				4AC59CDE294BA86300D44F7B /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +113,16 @@
 		4AC59C9D294BA6FD00D44F7B /* SimpleStateTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4AC59CDF294BA97F00D44F7B /* Info.plist */,
 				4AC59C9E294BA6FD00D44F7B /* SimpleStateTrackingApp.swift */,
-				4AC59CA0294BA6FD00D44F7B /* ContentView.swift */,
+				4AC59CC8294BA78900D44F7B /* MainContainerView.swift */,
+				4AC59CD0294BA7C400D44F7B /* NumberStore.swift */,
+				4AC59CD6294BA7E500D44F7B /* NumberView.swift */,
+				4AC59CCA294BA79F00D44F7B /* UserStats.swift */,
+				4AC59CD4294BA7DB00D44F7B /* NumberClient.swift */,
+				4AC59CCE294BA7B700D44F7B /* NickNameView.swift */,
+				4AC59CD2294BA7D100D44F7B /* SecretClient.swift */,
+				4AC59CCC294BA7AA00D44F7B /* StatsView.swift */,
 				4AC59CA2294BA70300D44F7B /* Assets.xcassets */,
 				4AC59CA4294BA70300D44F7B /* Preview Content */,
 			);
@@ -143,6 +170,10 @@
 			dependencies = (
 			);
 			name = SimpleStateTracking;
+			packageProductDependencies = (
+				4AC59CDB294BA86300D44F7B /* ComposableArchitecture */,
+				4AC59CDD294BA86300D44F7B /* Dependencies */,
+			);
 			productName = SimpleStateTracking;
 			productReference = 4AC59C9B294BA6FD00D44F7B /* SimpleStateTracking.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 4AC59C92294BA6FD00D44F7B;
+			packageReferences = (
+				4AC59CDA294BA86300D44F7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 4AC59C9C294BA6FD00D44F7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC59CA1294BA6FD00D44F7B /* ContentView.swift in Sources */,
+				4AC59CCF294BA7B700D44F7B /* NickNameView.swift in Sources */,
+				4AC59CCB294BA79F00D44F7B /* UserStats.swift in Sources */,
+				4AC59CD3294BA7D100D44F7B /* SecretClient.swift in Sources */,
+				4AC59CD7294BA7E500D44F7B /* NumberView.swift in Sources */,
+				4AC59CD5294BA7DC00D44F7B /* NumberClient.swift in Sources */,
+				4AC59CCD294BA7AA00D44F7B /* StatsView.swift in Sources */,
+				4AC59CD1294BA7C400D44F7B /* NumberStore.swift in Sources */,
+				4AC59CC9294BA78A00D44F7B /* MainContainerView.swift in Sources */,
 				4AC59C9F294BA6FD00D44F7B /* SimpleStateTrackingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +461,7 @@
 				DEVELOPMENT_TEAM = Q8WPW9BZ33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleStateTracking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +491,7 @@
 				DEVELOPMENT_TEAM = Q8WPW9BZ33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleStateTracking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +626,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AC59CDA294BA86300D44F7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AC59CDB294BA86300D44F7B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AC59CDA294BA86300D44F7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		4AC59CDD294BA86300D44F7B /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AC59CDA294BA86300D44F7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AC59C93294BA6FD00D44F7B /* Project object */;
 }

@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SimpleStateTrackingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          MainContainerView(
+            store: .init(
+              initialState: .init(),
+              reducer: UserStats()
+            )
+          )
         }
     }
 }
