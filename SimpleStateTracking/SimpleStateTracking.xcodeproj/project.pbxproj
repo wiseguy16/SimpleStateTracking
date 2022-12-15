@@ -118,8 +118,8 @@
 				4AC59CC8294BA78900D44F7B /* MainContainerView.swift */,
 				4AF7D004294BAB9F0095B8C0 /* Number */,
 				4AF7D005294BABB20095B8C0 /* Name */,
-				4AC59CE0294BAAE300D44F7B /* Dependencies */,
 				4AF7D003294BAB880095B8C0 /* UserStats */,
+				4AC59CE0294BAAE300D44F7B /* Dependencies */,
 				4AC59CA2294BA70300D44F7B /* Assets.xcassets */,
 				4AC59CA4294BA70300D44F7B /* Preview Content */,
 			);

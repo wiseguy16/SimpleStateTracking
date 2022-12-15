@@ -6,31 +6,51 @@
 //
 
 import XCTest
+import ComposableArchitecture
 @testable import SimpleStateTracking
 
 final class SimpleStateTrackingTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  let numberStore = TestStore(
+    initialState: Number.State(number: 0),
+    reducer: Number()
+  )
+  
+  func testIncrement() async {
+    await numberStore.send(.increment) {
+      $0.number = 1
     }
+  }
+  
+  func testDecrement() async {
+    await numberStore.send(.decrement) {
+      $0.number = -1
+    }
+  }
+  
+  func testUpUpUpThenDown() async {
+    await numberStore.send(.increment) {
+      $0.number = 1
+    }
+    await numberStore.send(.increment) {
+      $0.number = 2
+    }
+    await numberStore.send(.increment) {
+      $0.number = 3
+    }
+    await numberStore.send(.decrement) {
+      $0.number = 2
+    }
+  }
+  
+  func testFact() async {
+    
+    await numberStore.send(.factResponse(.success("3"))) {
+      $0.numberFact = "3"
+    }
+  }
+  
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
